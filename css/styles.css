@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-color: #0E0E0E;
+    --light-color: #FFF;
+    --violet-color: #9d84ff;
+    --color-bg-opacity: 1;
+    --font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--dark-color);
+    height: 100vh;
+    color: var(--light-color);
+    font-family: var(--font-family);
+}
+
+/*Container section...............*/
+
+.container{
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+/*Profile section.........................*/
+
+.profile h1{
+    margin: 20px 0;
+}
+
+.profile span{
+    letter-spacing: 1px;
+}
+
+#date{
+    padding: 50px 0 0 0;
+}
+
+/*Add task section.................................*/
+
+.addTask{
+    display: flex;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 40px 0;
+}
+
+.addTask input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--light-color);
+    outline: none;
+}
+
+.addTask i{
+    font-size: 50px;
+    color: var(--violet-color);
+    cursor: pointer;
+}
+
+.addTask i:hover{
+    transform: scale(1.1);
+}
+
+.addTask input::placeholder{
+    font-size: 1.1rem;
+    color: var(--violet-color);
+}
+
+/*Task section..............................*/
+
+.taskContainer h3{
+    margin-bottom: 20px;
+}
+
+.taskContainer li{
+    display: flex;
+    background: rgb(39 39 42/var(--color-bg-opacity));
+    border-radius: 5px;
+    padding: 15px 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.taskContainer i{
+    font-size: 25px;
+}
+
+.taskContainer i:hover{
+    color: var(--violet-color);
+    cursor: pointer;
+}
+
+.taskContainer > ul p{
+    font-size: 1.2rem;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: var(--violet-color);
+}
+
+.fa-check-circle{
+    color: var(--violet-color);
+}
